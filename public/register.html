@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
         
         // Send AJAX request to PHP backend
-        fetch('../php/register.php', {
+        fetch('/api.php?endpoint=register', {
             method: 'POST',
             body: formData
         })
